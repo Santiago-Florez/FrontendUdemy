@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--ETIQUETAS META-->
+	<!--atributo name: recibe varios valores y dependiendo de ello se hace el content-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Elementos para HTML</title>
+</head>
+	<body>
+		<!-- TITULOS -->
+			<!-- h1: Titulo principal 
+				h2, h3, h4, h5, h6: titulo secundario
+				Disminuye el tamaño de la leta con cada numero-->
+			<h1>Titulo "h1"</h1>
+			<h2>Titulo "h2"</h2>
+			<h3>Titulo "h3"</h3>
+			<h4>Titulo "h4"</h4>
+			<h5>Titulo "h5"</h5>
+			<h6>Titulo "h6"</h6>
+			<!-- Navegadores solo permiten 1 h1 por pagina -->
+			<!-- Navegadores permiten cuantos h queramos menos h1 -->
+
+		<!-- PARRAFOS en bloques (hacen salto de linea por cada 	etiqueta que se ponga)-->
+			<!-- Cada p es un salto de linea se nota por el espacio que deja, sin importar que este no este hasta el final del sitio web-->
+			<!--br: es para hacer un enter sin dejar tanto espacio como los p pero se puede poner varias veces para dejar mas espacio entre parrfos-->
+			<h3>PARRAFOS</h3>
+			<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit.<br> A molestiae aperiam magni sapiente repellendus iusto voluptate eum ipsum quam, dolor harum culpa labore tempora minima.</p>
+			<!--b: aplicar negrita, strong: negrita, i:Italic, em: Enfasis
+				mark:Marcado, del:Deleted, ins:Isertado, sub: texto peueño y abajo, sup: texto pequeño arriba, small: texto pequeño-->
+			<p>Lorem, <b>ipsum dolor sit amet consectetur </b>("b"), adipisicing elit. <i>Voluptate</i> ("i") <em>eveniet</em> ("em") <mark>ullam</mark> ("mark") quam <del>quia</del> ("del") ut <ins>praesentium</ins> ("ins") <sub>saepe</sub> ("sub") <sup>illo</sup> ("sup") reiciendis <small>iusto</small> ("small").</p>
+
+		<!--Enlaces en linea (no hacen salto de linea como si lo hacen p)-->
+			<!--a: Etiqueta para link o enlaces qeu nos lleven a otras paginas o sitios, recibe el atributo href="link al que queremos que nos lleve" -->
+			<h3>LINKS o ENLACES</h3>
+			<p><a href="http://google.com">MI PAGINA WEB</a> (Click para ir a google en la misma pestaña)</p>
+			<!--atributo target="_blank" envia a otra pestaña -->
+			<p><a href="http://google.com" target="_blank">MI PAGINA WEB</a> (Click para ir a google en otra pestaña)</p>
+			<!--Va a la carpeta y busca el archivo -->
+			<p><a href="enlaces/holaMundo.html" target="_blank">MI PAGINA WEB</a> (Click para ir a un archivo de mi pc en otra pestaña)</p>
+			<!--busca el archivo porque esta en la misma carpeta-->
+			<p><a href="holaMundo.html" target="_blank">MI PAGINA WEB</a> (Click para ir a un archivo de mi pc en otra pestaña)</p>
+
+		<!--Listas-->
+			<h2>LISTAS</h2>
+			<h3>Lista desordenada</h3>
+			<ul>
+				<li>Elentos de la lista</li>
+				<li>Elemento de la lista 2</li>
+			</ul>
+			<h3>Lista Ordenada</h3>
+			<ol>
+				<li>Elemento de la lista</li>
+				<li>Elemento de la lista 2</li>
+			</ol>
+			<h3>Lista Anidada de diferentes tipos</h3>
+			<ol>
+				<li>HTML</li>
+				<li>CSS</li>
+				<ul>
+					<li>Responsive Design</li>
+					<li>FlexBox</li>
+				</ul>
+				<li>JS</li>
+			</ol>
+		<!-- Imagenes -->
+			<h3>Imagenes</h3>
+			<!--img: poner imegenes y tiene los atributos de src: link o ruta de la imagen y alt: Descripcion de la imagen en caso que esta no cargue-->
+			<p>Img normal</p>
+			<img src="../../../Imágenes/simon.jpg" alt="Imagen PC" width="200" title="Logo juego Simon">
+			<p>Img que al darle click nos manda a google (img dentro de una etiqueta a)</p>
+			<a href="http://google.com"><img src="../../../Imágenes/simon.jpg" alt="Imagen PC" width="200" title="Logo juego Simon"></a>
+
+		<!-- Tablas -->
+		<!--table: etiqueta principal, tr: crear una fila, td: encabezado-->
+			<table border="1">
+				<tr>
+					<td>Imagen <br>Juana</td>
+					<td>Descripcion</td>
+				</tr>
+				<tr>
+					<td><img src="../../../Imágenes/simon.jpg" alt="Imagen PC" width="200" title="Logo juego Simon"></td>
+					<td>Imagen de <b>juego simon<b></td>
+				</tr>
+			</table>
+
+		<!--FORMULARIOS-->
+		<!--form: etiqueca base para los formularios, action="nombreArchivo": atributo que toma un valor de un archivo que toma los datos del formulario y guardarlos en una base de datos, input es una entrada de datos com metodo type: especifica que tipo es el input y placeholder: atributo que indica que debe poner en el input y ese mensaje se borra cuando se vaya a escribir, maxlength: atributo que especifica el numero de carecteres permitidos,size: atributo para modificar el tamaño, required: indica al usuario que si o si debe llenar el input, name: atributo que diferencia a cada input a la hora de hacer algo con ellos readonly: solo de lectura, disable:desactiva un input-->
+			<form action="" method="">
+				<input type="text" placeholder="Nombre:" id="nombre"><br>
+				<input type="email" placeholder="Correo:"><br>
+				<textarea name="mensaje" placeholder="Mensaje:"></textarea><br>
+				<!--label: texto para indicar que es lo que se debe hacer, for: se pone un id para relacionar el texto con algun elemento si se hace clic el el texto en el DOM marca a que hace parte ese texto-->
+				<label for="pais">Paises:</label>
+				<select name="pais" id="pais">
+					<!--value: Valor que recive la base de datos-->
+					<option value="col">Colombia</option>
+					<option value="mex">Mexico</option>
+				</select><br>
+				<input type="radio" value="mujer" name="genero" id="mujer"><label for="mujer">Mujer</label><br>
+				<input type="radio" value="Hombre" name="genero" id="Hombre"><label for="Hombre">Hombre</label><br>
+				<input type="checkbox" value="Terminos" name="terminos" id="termino"><label for="termino">Terminos y Condiciones</label><br>
+				<input type="password" placeholder="Contraseña:" id="Contraseña"><br>
+				<input type="color" name="color"><br>
+				<input type="number" min="5" max="20"><br>
+				<input type="range" name="rango" min="0" max="5"><br>
+				<input type="submit" value="Enviar">
+			</form>
+
+			<!--CITAR TEXTO-->
+			<!--blockquote: etiqueta donde se pone el texto que se quiere citar, este se centrara
+				cite: cambia la estructira del texo para hacer referencia a una cita-->
+			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in <cite>culpa qui officia</cite> culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+
+			<!--ATRIBUTOS id y class-->
+			<!--id: sirve para difenciar una etiqueta de otra, esto sera mas util a la hora de usarlo en JAVASCRIPT, un id debe tener nombres diferentes por etiquetas-->
+			<!--class: hace lo mismo que un id pero este si puede tener el mismo nombre en diferentes etiquetas y es mas util al usar CSS-->
+
+			<a href="#" id="enlace" class="boton-azul">ENLACE con CLASS y ID</a><br>
+
+			<!--AUDIO-->
+			<!--sirve para agregar audios a nuestar pagina web, atributo src:url del audio-->
+			<p>Manejo de Audios <br>Etiqueta <b>audio</b></p>
+			<audio src="media/ganstasParadise.mp3" controls=""></audio>
+			<audio controls>
+				<source src="media/ganstasParadise.mp3" type="audio/mpeg">
+			</audio>
+			<!-- Audios que se pueden usar: mp3(audio/mpeg), ogg(audio/ogg), wav(audio/wav) -->
+			<!--Soporte de los tipos de audio por navegadores
+				IExplorer: mp3
+				Chrome: todos
+				Firefox: todos
+				Safari: mp3 y wav
+				Opera: todos-->
+
+			<!--VIDEO-->
+	</body>
+</html>
