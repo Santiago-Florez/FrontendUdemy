@@ -82,3 +82,45 @@ a:active {
   text-decoration: line-through;
   font-size: 100px;
 }
+/*TEXTO Y TIPOGRAFIA*/
+body {
+  /*Toma el tipo de tipografia segun las propiedades de los navegadores*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: inherit /*estilo del texto*/;
+  font-weight: normal /*Grosor de texto*/;
+  text-align: justify;
+  text-transform: capitalize /*Poner la primera letra en mayuscula*/;
+  letter-spacing: 3px /*espacion entre letra*/;
+  line-height: 30px /*espacio entre linea*/;
+}
+/*Unidades de medida
+  px
+  em: toman el valor del obejto mas cercano o el contenedor padre(si se tiene un body de 20px
+    y se le quiere poner un texto al doble p 2em. Va a tomar el tamaño del body y lo va a doblar)
+  rem : tomar el valor del body especificamente
+  %*/
+/*Unidades de color
+  color como tal: blue, red ...
+  rgb: red, gren, blue(datos de internet).
+  #hexadecimal
+  rgba: red, green, blue, transparencia(0-1).*/
+/*CAJA
+  margin: margen exterior del borde (arriba-abajo izq-derecha)
+    (arriba derecha abajo izq)
+  padding: margen interna del borde
+  weidth: ancho entre contenido y el padding
+  height: alto entre contenido y el padding
+  border: borde de los contenidos.*/
+.caja {
+  background: blue;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  padding: 2px 10px 5px 2px;
+  border: 20px solid #000;
+  border-radius: 20px;
+}
+.caja article {
+  background: rgb(195, 195, 29);
+}
