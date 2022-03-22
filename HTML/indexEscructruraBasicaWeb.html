@@ -5,6 +5,10 @@
 	<!--atributo name: recibe varios valores y dependiendo de ello se hace el content-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Agregando un icono o favicon a la pagina-->
+	<!--Pequeño icono en la pestaña del navegador-->
+	<!--Pagina favicongenerator size de 32px archivo .ico-->
+	<link rel="shorcut icon" type="image/x-icon" href="media/favicon.ico">
 	<title>Elementos para HTML</title>
 </head>
 	<body>
@@ -139,5 +143,75 @@
 				Opera: todos-->
 
 			<!--VIDEO-->
+			<!--la etiqueta source nos permite insertar mas un solo archivo de video-->
+			<p>Manejo de Videos <br>Etiqueta <b>video</b></p>
+			<video width="600px" controls>
+				<source src="media/Mi Primer Aborto Show Completo._720P HD.mp4" type="video/mp4">
+			</video>
+			<video src="media/Mi Primer Aborto Show Completo._720P HD.mp4" controls width="900px"></video>
+			<!-- Videos que se pueden usar: mp4(video/mp4), ogg(video/ogg), wav(video/webm) -->
+			<!--Soporte de los tipos de video por navegadores
+				IExplorer: mp4
+				Chrome: todos
+				Firefox: todos
+				Safari: mp4
+				Opera: todos-->
+
+			<!--Etiqueta SVG-->
+			<!--Otro tipo de formato de imagen, pero funciona como una especie de lienzo y se puede diseñar imagenes con codigo-->
+
+			<!--Etiquetas de Maquetado-->
+			<!--div: Contenedor para agregar cualquier otra etiqueta-->
+			<!--Anteriormente se hacia de esa forma pero con html5 se cambio todo y se creo cada etiqueta: header, nav, main, footer, etc.-->
+			<!--Elemnetos NO Semanticos, es decir no definen el contenido que tendran-->
+			<div class="header">
+				Cabecera de la paigina
+			</div>
+			<div class="nav">
+				Contenido de navegacion enlaces o menus
+			</div>
+			<div class="main">
+				Contenido principal
+			</div>
+			<div class="footer">
+				Pie de pagina
+			</div>
+			<!--Elementos semanticos, es decir definen el contenido que tendran-->
+			<header></header>
+			<nav></nav>
+			<main></main>
+			<section>
+				<!--Secciones de las paginas web, como lo es un acerca de, formulario, articulos con cierta informacion-->
+			</section>
+			<article>
+				<!--Poner info relativa de la pagina-->
+			</article>
+			<aside>
+				<!--Contenido que se sale del contenido principal de la pagina-->
+			</aside>
+			<footer></footer>
+
+			<!--Diferencias entre DIV, SECTION y ARTICLE-->
+			<!--div. es un contenedor universal, se puede poner cualquier elemento-->
+			<!--section: Pueden tener varior articulos y contener a la etiqueta article-->
+			<!--arcticle: Puede tener la informacion de la pagina-->
+
+			<!--Etiqueta iframe y span-->
+			<!--Agregar una pagina web dentro de otra
+				en el src va el link de la pagina
+				en dados caso funciona para anuncios-->
+			<iframe src="" frameborder="0"></iframe>
+			<!--Span-->
+			<!--Etiqueta en linea y por ende no afecta la estructura y pues nos puede ayudar para en el css darle diseño mas personalizado a lo que se ponga en esa etiqueta-->
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima quia,
+				 impedit quibusdam ullam eveniet iusto ad aspernatur <span class="azul">aliquam</span> quam optio et soluta! 
+				 Vitae asperiores hic perspiciatis provident vero dolorum.</p>
+			
+			<!--Etiqueta scrip y noscrip-->
+			<!--script: Agregar codigo JavaScript o enlazar archivos .js-->
+			<!--noscript: mostrar cosas o mensajes pra los usuarios no tienen javascript activado-->
+
+			<!--Video de Youtube y Vimeo-->
+			<!--En paginas como vimeo y youtube al compartir un video nos aparece un codigo con la etiquta iframe basta con copiar y pegar en nuestro html y ya -->
 	</body>
 </html>

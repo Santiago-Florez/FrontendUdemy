@@ -1,0 +1,84 @@
+/*En css se le aplican estilos a las etiquetas del html
+una vez se hace la relacion con link en el html
+se puede acceder a los elementos del html 
+se pueden aplicar por etiquetas, class o id*/
+
+/*por etiqueta, se aplican los estilos a todo lo que este dentro de esas etiquetas*/
+/*se selecciona la etiqueta y por dentro los atributos a cambiar
+body {
+  color: blue;
+}*/
+
+/*selector universal: *
+* {
+  color: red;
+}*/
+/*Selector de etiqueta
+nombre_etiqueta, nombre_etiqueta ...{
+  que se quiere hacer
+  (Se le aplica a las etiquetas seleccionadas)
+}*/
+h1,
+h2,
+h3 {
+  color: aqua;
+}
+/*Selector descendente
+seleccionar etiquetas que estan dentro de otras etiquetas
+y aplicar los estilos a esas etiquetas que cumplan esa condicion de estar contenidad dentro 
+de otras etiquetas
+*/
+div p {
+  font-size: 30px;
+}
+div article p {
+  color: brown;
+  font-size: 20px;
+}
+/*Selector de clase
+ seleccionan las etiquetas que tengan la misma clase*/
+.grande {
+  font-size: xx-large;
+}
+
+/*Selectores Avanzados*/
+/*Hijos: cuando se quiere selecionar un p dentro de un div
+pero que solo esten esos dos*/
+div > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/*Selector de atributos (usados en formularios)*/
+input[type] {
+  display: block;
+}
+
+/*FONDOS*/
+/*backgound*/
+body {
+  /*background: black;
+  background: url("../img/fondo2.jpg");
+  background-size: tamaño(contain: todo, cover: ancho, px o %;
+  background-repeat: si queremos que la imagen se repita para completar la pantalla
+  background-attachment: modo de la imagen, movible o fija(fixed)
+  background-position: posicion de la imagen en la pagina(valor x valor y);
+  se puede resumir en un simple..., el size toca aparte*/
+  background: red no-repeat fixed center center;
+}
+/*ENLACES*/
+a:hover {
+  /*se le da un efecto cuando el mouse pase por encia de el*/
+  text-decoration: none;
+  background-color: #f9a03f;
+}
+a:link {
+  /*se le da un efecto cuando el link no ha sido visitado*/
+  color: aqua;
+}
+a:visited {
+  /*se le da un efecto cuando el link ha sido visitado*/
+  color: cadetblue;
+}
+a:active {
+  text-decoration: line-through;
+  font-size: 100px;
+}
